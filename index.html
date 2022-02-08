@@ -50,28 +50,28 @@ To learn how to create…">
 <blockquote>
 <p>So&apos;nggi yangilanishlar haqida birinchi bo&apos;lib xabardor bo&apos;lish uchun <a href="https://t.me/botnews">@BotNews</a> ga obuna bo&apos;ling va <a href="https://t.me/bottalk">@BotTalk</a> muhokamasiga qo&apos;shiling.</p>
 </blockquote>
-<h4><a class="anchor" name="january-31-2022" href="#january-31-2022"><i class="anchor-icon"></i></a>Yanvar 31, 2022</h4>
+<h4><a class="anchor" name="january-31-2022" href="#january-31-2022"><i class="anchor-icon"></i></a>31-yanvar, 2022-yil</h4>
 <p><strong>Bot API 5.7</strong></p>
 <ul>
 <li><a href="https://telegram.org/blog/video-stickers-better-reactions">Video Sticker</a>larni q&apos;llab quvvatlash qo'shildi.</li>
 <li><a href="#sticker">Sticker</a> va <a href="#stickerset">StickerSet</a> sinflariga <em>is_video</em> maydoni q&apos;shildi.</li>
 <li><a href="#createnewstickerset">createNewStickerSet</a> va <a href="#addstickertoset">addStickerToSet</a> usullariga <em>webm_sticker</em> parametri qoʻshildi.</li>
 </ul>
-<h4><a class="anchor" name="december-30-2021" href="#december-30-2021"><i class="anchor-icon"></i></a>Dekabr 30, 2021</h4>
+<h4><a class="anchor" name="december-30-2021" href="#december-30-2021"><i class="anchor-icon"></i></a>30-dekabr, 2021-yil</h4>
 <p><strong>Bot API 5.6</strong></p>
 <ul>
 <li><a href="https://telegram.org/blog/protected-content-delete-by-date-and-more#protected-content-in-groups-and-channels">Himoyalangan kontent</a>ni qo&apos;llab-quvvatlash yaxshilandi.</li>
-<li>Added the parameter <em>protect_content</em> to the methods <a href="#sendmessage">sendMessage</a>, <a href="#sendphoto">sendPhoto</a>, <a href="#sendvideo">sendVideo</a>, <a href="#sendanimation">sendAnimation</a>, <a href="#sendaudio">sendAudio</a>, <a href="#senddocument">sendDocument</a>, <a href="#sendsticker">sendSticker</a>, <a href="#sendvideonote">sendVideoNote</a>, <a href="#sendvoice">sendVoice</a>, <a href="#sendlocation">sendLocation</a>, <a href="#sendvenue">sendVenue</a>, <a href="#sendcontact">sendContact</a>, <a href="#sendpoll">sendPoll</a>, <a href="#senddice">sendDice</a>, <a href="#sendinvoice">sendInvoice</a>, <a href="#sendgame">sendGame</a>, <a href="#sendmediagroup">sendMediaGroup</a>, <a href="#copymessage">copyMessage</a>, <a href="#forwardmessage">forwardMessage</a> to allow sending messages with protected content to any chat.</li>
-<li>Added support for <a href="https://telegram.org/blog/reactions-spoilers-translations#spoilers">spoiler entities</a>, which will work in Telegram versions released after December 30, 2021. Older clients will display <em>unsupported message</em>.</li>
-<li>Added new <a href="#messageentity">MessageEntity</a> type “spoiler”.</li>
-<li>Added the ability to specify spoiler entities using <a href="#html-style">HTML</a> and <a href="#markdownv2-style">MarkdownV2</a> formatting options.</li>
+<li><a href="#sendmessage">sendMessage</a>, <a href="#sendphoto">sendPhoto</a>, <a href="#sendvideo">sendVideo</a>, <a href="#sendanimation">sendAnimation</a>, <a href="#sendaudio">sendAudio</a>, <a href="#senddocument">sendDocument</a>, <a href="#sendsticker">sendSticker</a>, <a href="#sendvideonote">sendVideoNote</a>, <a href="#sendvoice">sendVoice</a>, <a href="#sendlocation">sendLocation</a>, <a href="#sendvenue">sendVenue</a>, <a href="#sendcontact">sendContact</a>, <a href="#sendpoll">sendPoll</a>, <a href="#senddice">sendDice</a>, <a href="#sendinvoice">sendInvoice</a>, <a href="#sendgame">sendGame</a>, <a href="#sendmediagroup">sendMediaGroup</a>, <a href="#copymessage">copyMessage</a>, <a href="#forwardmessage">forwardMessage</a> usullariga <em>protect_content</em> qo&apos;shildi, har qanday chatga himoyalangan tarkibga ega xabarlar yuborishga ruhsat berish.</li>
+<li>2021-yil 30-dekabrdan keyin chiqarilgan Telegram versiyalarida ishlaydigan <a href="https://telegram.org/blog/reactions-spoilers-translations#spoilers">spoyler ob&apos;yektlari</a> uchun qo&apos;shimcha yordam qo&apos;shildi. Eski mijozlar <em>qo&apos;llab-quvvatlamaydigan xabar </em>ni ko&apos;rsatadi..</li>
+<li>Yangi <a href="#messageentity">MessageEntity</a> turidagi "spoyler” qo&apos;shildi.</li>
+<li><a href="#html-style">HTML</a> va <a href="#markdownv2-style">MarkdownV2</a> formatlash opsiyalaridan foydalangan holda spoyler ob&apos;ektlari belgilash imkoniyati qo&apos;shildi.</li>
 </ul>
-<h4><a class="anchor" name="december-7-2021" href="#december-7-2021"><i class="anchor-icon"></i></a>December 7, 2021</h4>
+<h4><a class="anchor" name="december-7-2021" href="#december-7-2021"><i class="anchor-icon"></i></a>7-dekabr, 2021-yil</h4>
 <p><strong>Bot API 5.5</strong></p>
 <ul>
-<li>Bots are now allowed to contact users who sent a join request to a chat where the bot is an administrator with the <em>can_invite_users</em> administrator right – even if the user never interacted with the bot before.</li>
-<li>Added support for mentioning users by their ID in inline keyboards. This will only work in Telegram versions released after December 7, 2021. Older clients will display <em>unsupported message</em>.</li>
-<li>Added the methods <a href="#banchatsenderchat">banChatSenderChat</a> and <a href="#unbanchatsenderchat">unbanChatSenderChat</a> for banning and unbanning channel chats in supergroups and channels.</li>
+<li>Botlarga endi bot <em>can_invite_users</em> administrator huquqiga ega bo&apos;lgan administrator bo&apos;lgan chatga qo&apos;shilish so&apos;rovini yuborgan foydalanuvchilar bilan bog&apos;lanishlari mumkin - hatto foydalanuvchi ilgari hech qachon bot bilan muloqot qilmagan bo'lsa ham.</li>
+<li>Inline klaviaturada foydalanuvchilarni indentifikatori bo&apos;yicha zikr qilish qo&apos;shimcha qo&apos;shildi. Bu faqat 2021-yil 7-dekabrdan keyin chiqarligan Telegram versiyalarida ishlaydi. Eski mijozlarda <em>qo&apos;llab-quvvatlamaydigan xabar</em>ni ko&apos;rsatadi.</li>
+<li>Superguruh va kanal suhbatlarini taqiqlash va taqiqni olib tashlash uchun <a href="#banchatsenderchat">banChatSenderChat</a> va <a href="#unbanchatsenderchat">unbanChatSenderChat</a> usullari qo&apos;shildi.</li>
 <li>Added the field <em>has_private_forwards</em> to the class <a href="#chat">Chat</a> for private chats, which can be used to check the possibility of mentioning the user by their ID.</li>
 <li>Added the field <em>has_protected_content</em> to the classes <a href="#chat">Chat</a> and <a href="#message">Message</a>.</li>
 <li>Added the field <em>is_automatic_forward</em> to the class <a href="#message">Message</a>.</li>
@@ -79,7 +79,7 @@ To learn how to create…">
 <p><strong>Note:</strong> After this update it will become impossible to forward messages from some chats. Use the fields <em>has_protected_content</em> in the classes <a href="#message">Message</a> and <a href="#chat">Chat</a> to check this.</p>
 <p><strong>Note:</strong> After this update users are able to send messages on behalf of channels they own. Bots are expected to use the field <em>sender_chat</em> in the class <a href="#message">Message</a> to correctly support such messages.</p>
 <p><strong>Note:</strong> As previously announced, user identifiers can now have up to 52 significant bits and require a 64-bit integer or double-precision float type to be stored safely.</p>
-<h4><a class="anchor" name="november-5-2021" href="#november-5-2021"><i class="anchor-icon"></i></a>November 5, 2021</h4>
+<h4><a class="anchor" name="november-5-2021" href="#november-5-2021"><i class="anchor-icon"></i></a>5-noyabr, 2021-yil</h4>
 <p><strong>Bot API 5.4</strong></p>
 <ul>
 <li>Added the the parameter <code>creates_join_request</code> to the methods <a href="#createchatinvitelink">createChatInviteLink</a> and <a href="#editchatinvitelink">editChatInviteLink</a> for managing chat invite links that create join requests (read more about this on our <a href="https://telegram.org/blog/shared-media-scrolling-calendar-join-requests-and-more#join-requests-for-groups-and-channels">blog</a>).</li>
