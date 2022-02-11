@@ -134,9 +134,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -222,10 +222,10 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -264,10 +264,10 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -318,10 +318,10 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -340,9 +340,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -388,78 +388,78 @@ To learn how to create…">
 </tr>
 </tbody>
 </table>
-<h3><a class="anchor" name="available-types" href="#available-types"><i class="anchor-icon"></i></a>Available types</h3>
-<p>All types used in the Bot API responses are represented as JSON-objects.</p>
-<p>It is safe to use 32-bit signed integers for storing all <strong>Integer</strong> fields unless otherwise noted.</p>
+<h3><a class="anchor" name="available-types" href="#available-types"><i class="anchor-icon"></i></a>Mavjud turlar</h3>
+<p>Bot API javoblarida ishlatiladigan barcha turlar JSON-ob&apos;ektlar sifatida taqdim etiladi.</p>
+<p>Agar boshqacha ko&apos;rsatilmagan bo&apos;lsa, barcha <strong>Integer</strong> maydonlarni saqlash uchun 32 bitli imzolangan natural sonlardan foydalanish xavfsizdir.</p>
 <blockquote>
-<p><strong>Optional</strong> fields may be not returned when irrelevant.</p>
+<p><strong>Ixtiyoriy</strong> maydonlar ahamiyatsiz bo&apos;lsa, qaytarilmasligi mumkin.</p>
 </blockquote>
 <h4><a class="anchor" name="user" href="#user"><i class="anchor-icon"></i></a>User</h4>
-<p>This object represents a Telegram user or bot.</p>
+<p>Bu obyekt Telegram foydalanuvchisi yoki botini ifodalaydi.</p>
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>id</td>
 <td>Integer</td>
-<td>Unique identifier for this user or bot. This number may have more than 32 significant bits and some programming languages may have difficulty/silent defects in interpreting it. But it has at most 52 significant bits, so a 64-bit integer or double-precision float type are safe for storing this identifier.</td>
+<td>Bu foydalanuvchi yoki bot uchun yagona identifikator. Bu raqam 32 dan ortiq bitga ega bo&apos;lishi mumkin ammo ba&apos;zi dasturlash tillarida uni talqin qilishda qiyinchilik/nomalum nuqsonlar bo&apos;lishi mumkin. Lekin u ko'pi bilan 52 bitga ega, shuning uchun 64 bitli butun yoki ikki marta aniqlikdagi float turi ushbu identifikatorni saqlash uchun xavfsizdir.</td>
 </tr>
 <tr>
 <td>is_bot</td>
 <td>Boolean</td>
-<td><em>True</em>, if this user is a bot</td>
+<td><em>True</em>, agar bu foydalanuvchi bot bo&apos;lsa</td>
 </tr>
 <tr>
 <td>first_name</td>
 <td>String</td>
-<td>User&#39;s or bot&#39;s first name</td>
+<td>Foydalanuvchi yoki botning ismi</td>
 </tr>
 <tr>
 <td>last_name</td>
 <td>String</td>
-<td><em>Ixtiyoriy</em>. User&#39;s or bot&#39;s last name</td>
+<td><em>Ixtiyoriy</em>. Foydalanuvchi yoki botning familyasi</td>
 </tr>
 <tr>
 <td>username</td>
 <td>String</td>
-<td><em>Ixtiyoriy</em>. User&#39;s or bot&#39;s username</td>
+<td><em>Ixtiyoriy</em>. Foydalanuvchi yoki botning foydalanuchi nomi</td>
 </tr>
 <tr>
 <td>language_code</td>
 <td>String</td>
-<td><em>Ixtiyoriy</em>. <a href="https://en.wikipedia.org/wiki/IETF_language_tag">IETF language tag</a> of the user&#39;s language</td>
+<td><em>Ixtiyoriy</em>. Foydalanuvchi tilining <a href="https://en.wikipedia.org/wiki/IETF_language_tag">IETF language tag</a> dagi qisqa nomi.</td>
 </tr>
 <tr>
 <td>can_join_groups</td>
 <td>Boolean</td>
-<td><em>Ixtiyoriy</em>. <em>True</em>, if the bot can be invited to groups. Returned only in <a href="#getme">getMe</a>.</td>
+<td><em>Ixtiyoriy</em>. <em>True</em>, agar botni guruhlarga taklif qilish mumkin bo&apos;lsa. Faqat <a href="#getme">getMe</a>-da qaytarildi.</td>
 </tr>
 <tr>
 <td>can_read_all_group_messages</td>
 <td>Boolean</td>
-<td><em>Ixtiyoriy</em>. <em>True</em>, if <a href="https://core.telegram.org/bots#privacy-mode">privacy mode</a> is disabled for the bot. Returned only in <a href="#getme">getMe</a>.</td>
+<td><em>Ixtiyoriy</em>. <em>True</em>, agar bot uchun <a href="https://core.telegram.org/bots#privacy-mode">privacy mode</a> o&apos;chirilgan bo&apos;lsa. Faqat <a href="#getme">getMe</a>-da qaytarildi.</td>
 </tr>
 <tr>
 <td>supports_inline_queries</td>
 <td>Boolean</td>
-<td><em>Ixtiyoriy</em>. <em>True</em>, if the bot supports inline queries. Returned only in <a href="#getme">getMe</a>.</td>
+<td><em>Ixtiyoriy</em>. <em>True</em>, agar bot inline so&apos;rovlarni qo'llab-quvvatlasa. Faqat <a href="#getme">getMe</a>-da qaytarildi.</td>
 </tr>
 </tbody>
 </table>
 <h4><a class="anchor" name="chat" href="#chat"><i class="anchor-icon"></i></a>Chat</h4>
-<p>This object represents a chat.</p>
+<p>Bu obyekt chat ni ifodalaydi.</p>
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -570,9 +570,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -873,9 +873,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -891,9 +891,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -934,9 +934,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -972,9 +972,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -1030,9 +1030,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -1088,9 +1088,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -1131,9 +1131,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -1189,9 +1189,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -1232,9 +1232,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -1270,9 +1270,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -1308,9 +1308,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -1331,9 +1331,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -1354,9 +1354,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -1382,9 +1382,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -1460,9 +1460,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -1503,9 +1503,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -1551,9 +1551,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -1579,9 +1579,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -1597,9 +1597,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -1617,9 +1617,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -1635,9 +1635,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -1653,9 +1653,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -1679,9 +1679,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -1712,9 +1712,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -1750,9 +1750,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -1784,9 +1784,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -1802,9 +1802,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -1825,9 +1825,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -1844,9 +1844,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -1905,9 +1905,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -1938,9 +1938,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -1989,9 +1989,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -2025,9 +2025,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -2058,9 +2058,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -2126,9 +2126,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -2159,9 +2159,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -2247,9 +2247,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -2270,9 +2270,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -2343,9 +2343,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -2366,9 +2366,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -2394,9 +2394,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -2437,9 +2437,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -2475,9 +2475,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -2528,9 +2528,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -2551,9 +2551,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -2611,9 +2611,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -2629,9 +2629,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -2647,9 +2647,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -2665,9 +2665,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -2683,9 +2683,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -2706,9 +2706,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -2729,9 +2729,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -2757,9 +2757,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -2789,9 +2789,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -2827,9 +2827,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -2890,9 +2890,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -2948,9 +2948,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -3006,9 +3006,9 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -3090,10 +3090,10 @@ To learn how to create…">
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -3240,10 +3240,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -3284,10 +3284,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -3364,10 +3364,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -3439,10 +3439,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -3537,10 +3537,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -3623,10 +3623,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -3727,10 +3727,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -3825,10 +3825,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -3905,10 +3905,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -3979,10 +3979,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -4029,10 +4029,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -4115,10 +4115,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -4183,10 +4183,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -4221,10 +4221,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -4319,10 +4319,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -4393,10 +4393,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -4515,10 +4515,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -4575,10 +4575,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -4601,10 +4601,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -4633,10 +4633,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -4654,10 +4654,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -4692,10 +4692,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -4724,10 +4724,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -4762,10 +4762,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -4854,10 +4854,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -4886,10 +4886,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -4912,10 +4912,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -4938,10 +4938,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -4964,10 +4964,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -4987,10 +4987,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -5031,10 +5031,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -5081,10 +5081,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -5107,10 +5107,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -5133,10 +5133,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -5159,10 +5159,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -5185,10 +5185,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -5205,10 +5205,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -5231,10 +5231,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -5257,10 +5257,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -5289,10 +5289,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -5315,10 +5315,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -5335,10 +5335,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -5355,10 +5355,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -5375,10 +5375,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -5395,10 +5395,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -5415,10 +5415,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -5441,10 +5441,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -5467,10 +5467,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -5490,10 +5490,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -5534,10 +5534,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -5566,10 +5566,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -5592,10 +5592,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -5623,10 +5623,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -5685,10 +5685,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -5741,10 +5741,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -5785,10 +5785,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -5823,10 +5823,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -5855,10 +5855,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -5883,9 +5883,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -5951,9 +5951,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -5999,9 +5999,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -6032,10 +6032,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -6088,10 +6088,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -6108,10 +6108,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -6134,10 +6134,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -6202,10 +6202,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -6258,10 +6258,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -6284,10 +6284,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -6304,10 +6304,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -6339,9 +6339,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -6382,10 +6382,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -6463,9 +6463,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -6531,9 +6531,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -6609,9 +6609,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -6692,9 +6692,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -6778,9 +6778,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -6866,9 +6866,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -6935,9 +6935,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -6999,9 +6999,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -7083,9 +7083,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -7167,9 +7167,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -7256,9 +7256,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -7325,9 +7325,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -7359,9 +7359,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -7422,9 +7422,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -7480,9 +7480,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -7538,9 +7538,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -7577,9 +7577,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -7641,9 +7641,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -7704,9 +7704,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -7763,9 +7763,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -7826,9 +7826,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -7859,9 +7859,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -7902,9 +7902,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -7955,9 +7955,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -7988,9 +7988,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -8101,9 +8101,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -8142,10 +8142,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -8318,10 +8318,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -8356,10 +8356,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -8388,9 +8388,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -8411,9 +8411,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -8449,9 +8449,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -8492,9 +8492,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -8525,9 +8525,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -8553,9 +8553,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -8601,9 +8601,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -8634,9 +8634,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -8684,9 +8684,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -8707,9 +8707,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -8740,9 +8740,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -8803,9 +8803,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -8832,10 +8832,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -8871,9 +8871,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -8909,9 +8909,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -8942,9 +8942,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -8975,9 +8975,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -9008,9 +9008,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -9041,9 +9041,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -9074,9 +9074,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -9107,9 +9107,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -9140,9 +9140,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -9186,10 +9186,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -9242,9 +9242,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -9287,10 +9287,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -9346,10 +9346,10 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
+<th>Parametr</th>
+<th>Turi</th>
+<th>Majburiy</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
@@ -9384,9 +9384,9 @@ pre-formatted fixed-width code block written in the Python programming language
 <table class="table">
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<th>Maydon</th>
+<th>Turi</th>
+<th>Tavsif</th>
 </tr>
 </thead>
 <tbody>
