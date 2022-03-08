@@ -61,35 +61,35 @@ To learn how to create…">
 <p><strong>Bot API 5.6</strong></p>
 <ul>
 <li><a href="https://telegram.org/blog/protected-content-delete-by-date-and-more#protected-content-in-groups-and-channels">Himoyalangan kontent</a>ni qo&apos;llab-quvvatlash yaxshilandi.</li>
-<li><a href="#sendmessage">sendMessage</a>, <a href="#sendphoto">sendPhoto</a>, <a href="#sendvideo">sendVideo</a>, <a href="#sendanimation">sendAnimation</a>, <a href="#sendaudio">sendAudio</a>, <a href="#senddocument">sendDocument</a>, <a href="#sendsticker">sendSticker</a>, <a href="#sendvideonote">sendVideoNote</a>, <a href="#sendvoice">sendVoice</a>, <a href="#sendlocation">sendLocation</a>, <a href="#sendvenue">sendVenue</a>, <a href="#sendcontact">sendContact</a>, <a href="#sendpoll">sendPoll</a>, <a href="#senddice">sendDice</a>, <a href="#sendinvoice">sendInvoice</a>, <a href="#sendgame">sendGame</a>, <a href="#sendmediagroup">sendMediaGroup</a>, <a href="#copymessage">copyMessage</a>, <a href="#forwardmessage">forwardMessage</a> usullariga <em>protect_content</em> qo&apos;shildi, har qanday chatga himoyalangan tarkibga ega xabarlar yuborishga ruhsat berish.</li>
-<li>2021-yil 30-dekabrdan keyin chiqarilgan Telegram versiyalarida ishlaydigan <a href="https://telegram.org/blog/reactions-spoilers-translations#spoilers">spoyler ob&apos;yektlari</a> uchun qo&apos;shimcha yordam qo&apos;shildi. Eski mijozlar <em>qo&apos;llab-quvvatlamaydigan xabar </em>ni ko&apos;rsatadi..</li>
-<li>Yangi <a href="#messageentity">MessageEntity</a> turidagi "spoyler” qo&apos;shildi.</li>
-<li><a href="#html-style">HTML</a> va <a href="#markdownv2-style">MarkdownV2</a> formatlash opsiyalaridan foydalangan holda spoyler ob&apos;ektlari belgilash imkoniyati qo&apos;shildi.</li>
+<li><a href="#sendmessage">sendMessage</a>, <a href="#sendphoto">sendPhoto</a>, <a href="#sendvideo">sendVideo</a>, <a href="#sendanimation">sendAnimation</a>, <a href="#sendaudio">sendAudio</a>, <a href="#senddocument">sendDocument</a>, <a href="#sendsticker">sendSticker</a>, <a href="#sendvideonote">sendVideoNote</a>, <a href="#sendvoice">sendVoice</a>, <a href="#sendlocation">sendLocation</a>, <a href="#sendvenue">sendVenue</a>, <a href="#sendcontact">sendContact</a>, <a href="#sendpoll">sendPoll</a>, <a href="#senddice">sendDice</a>, <a href="#sendinvoice">sendInvoice</a>, <a href="#sendgame">sendGame</a>, <a href="#sendmediagroup">sendMediaGroup</a>, <a href="#copymessage">copyMessage</a>, <a href="#forwardmessage">forwardMessage</a> usullariga <em>protect_content</em> parametri qo&apos;shildi, har qanday chatga himoyalangan tarkibga ega xabarlar yuborishga ruhsat beradi.</li>
+<li>2021-yil 30-dekabrdan keyin chiqarilgan Telegram versiyalarida ishlaydigan <a href="https://telegram.org/blog/reactions-spoilers-translations#spoilers">spoilers ob&apos;yektlari</a> uchun qo&apos;shimcha yordam qo&apos;shildi. Eski mijozlar <em>qo&apos;llab-quvvatlamaydigan xabar </em>ni ko&apos;rsatadi..</li>
+<li>Yangi <a href="#messageentity">MessageEntity</a> turidagi "spoiler” qo&apos;shildi.</li>
+<li><a href="#html-style">HTML</a> va <a href="#markdownv2-style">MarkdownV2</a> formatlash opsiyalaridan foydalangan holda spoilers ob&apos;ektlari belgilash imkoniyati qo&apos;shildi.</li>
 </ul>
 <h4><a class="anchor" name="december-7-2021" href="#december-7-2021"><i class="anchor-icon"></i></a>7-dekabr, 2021-yil</h4>
 <p><strong>Bot API 5.5</strong></p>
 <ul>
 <li>Botlarga endi bot <em>can_invite_users</em> administrator huquqiga ega bo&apos;lgan administrator bo&apos;lgan chatga qo&apos;shilish so&apos;rovini yuborgan foydalanuvchilar bilan bog&apos;lanishlari mumkin - hatto foydalanuvchi ilgari hech qachon bot bilan muloqot qilmagan bo'lsa ham.</li>
-<li>Inline klaviaturada foydalanuvchilarni indentifikatori bo&apos;yicha zikr qilish qo&apos;shimcha qo&apos;shildi. Bu faqat 2021-yil 7-dekabrdan keyin chiqarligan Telegram versiyalarida ishlaydi. Eski mijozlarda <em>qo&apos;llab-quvvatlamaydigan xabar</em>ni ko&apos;rsatadi.</li>
+<li>Inline klaviaturada foydalanuvchilarni indentifikatori bo&apos;yicha belgilash(mention) qo&apos;shimcha qo&apos;shildi. Bu faqat 2021-yil 7-dekabrdan keyin chiqarligan Telegram versiyalarida ishlaydi. Eski mijozlarda <em>qo&apos;llab-quvvatlamaydigan xabar</em>ni ko&apos;rsatadi.</li>
 <li>Superguruhlarda kanal nomidan yozishni taqiqlash va taqiqni olib tashlash uchun <a href="#banchatsenderchat">banChatSenderChat</a> va <a href="#unbanchatsenderchat">unbanChatSenderChat</a> usullari qo&apos;shildi.</li>
-<li>Shaxsiy chatlar uchun <a href="#chat">Chat</a> sinfiga <em>has_private_forwards</em> maydoni qo&apos;shildi, undan foydalanuvchini ID bo&apos;yicha zikr qilish imkoniyatini tekshirish uchun foydalanish mumkin.</li>
+<li>Shaxsiy chatlar uchun <a href="#chat">Chat</a> sinfiga <em>has_private_forwards</em> maydoni qo&apos;shildi, undan foydalanuvchini ID bo&apos;yicha belgilash(mention) imkoniyatini tekshirish uchun foydalanish mumkin.</li>
 <li><a href="#chat">Chat</a> va <a href="#message">Message</a> sinflariga <em>has_protected_content</em> maydoni qo'shildi .</li>
 <li><a href="#message">Message</a> sinifiga <em>is_automatic_forward</em> maydoni qo'shildi</li>
 </ul>
 <p><strong>Eslatma:</strong> Ushbu yangilanishdan so&apos;ng bazi chatlardagi xabarlarni ulashish imkonsiz bo'lib qoladi. Buni tekshirish uchun <a href="#message">Message</a> va <a href="#chat">Chat</a> sinflaridagi  <em>has_protected_content</em> maydonlaridan foydalaning.</p>
 <p><strong>Eslatma:</strong> Ushbu yangilanishdan so'ng foydalanuvchilar o'zlariga tegishli kanallar nomidan xabar yuborishlari mumkin. Botlar bunday xabarlarni to&apos;g&apos;ri qo&apos;llab-quvvatlash uchun <a href="#message">Message</a> sinfidagi <em>sender_chat</em> maydonidan foydalanishi kutilmoqda.</p>
-<p><strong>Eslatma:</strong> As previously announced, user identifiers can now have up to 52 significant bits and require a 64-bit integer or double-precision float type to be stored safely.</p>
+<p><strong>Eslatma:</strong> Avval e'lon qilinganidek, foydalanuvchi identifikatorlari endi 52 bitga ega, shuning uchun 64 bitli butun yoki ikki marta aniqlikdagi float turi ushbu identifikatorni saqlash uchun xavfsizdir.</p>
 <h4><a class="anchor" name="november-5-2021" href="#november-5-2021"><i class="anchor-icon"></i></a>5-noyabr, 2021-yil</h4>
 <p><strong>Bot API 5.4</strong></p>
 <ul>
-<li>Added the the parameter <code>creates_join_request</code> to the methods <a href="#createchatinvitelink">createChatInviteLink</a> and <a href="#editchatinvitelink">editChatInviteLink</a> for managing chat invite links that create join requests (read more about this on our <a href="https://telegram.org/blog/shared-media-scrolling-calendar-join-requests-and-more#join-requests-for-groups-and-channels">blog</a>).</li>
-<li>Added the fields <code>creates_join_request</code> and <code>pending_join_request_count</code> to the class <a href="#chatinvitelink">ChatInviteLink</a>.</li>
-<li>Added the field <code>name</code> to the class <a href="#chatinvitelink">ChatInviteLink</a> and the parameters <code>name</code> to the methods <a href="#createchatinvitelink">createChatInviteLink</a> and <a href="#editchatinvitelink">editChatInviteLink</a> for managing <a href="https://telegram.org/blog/shared-media-scrolling-calendar-join-requests-and-more#unique-names-for-invite-links">invite link names</a>.</li>
-<li>Added updates about new requests to join the chat, represented by the class <a href="#chatjoinrequest">ChatJoinRequest</a> and the field <em>chat_join_request</em> in the <a href="#update">Update</a> class. The bot must be an administrator in the chat with the <em>can_invite_users</em> administrator right to receive these updates.</li>
-<li>Added the methods <a href="#approvechatjoinrequest">approveChatJoinRequest</a> and <a href="#declinechatjoinrequest">declineChatJoinRequest</a> for managing requests to join the chat.</li>
-<li>Added support for the <em>choose_sticker</em> action in the method <a href="#sendchataction">sendChatAction</a>.</li>
+<li><a href="#createchatinvitelink">createChatInviteLink</a> va <a href="#editchatinvitelink">editChatInviteLink</a> usullariga <code>creates_join_request</code> parametri qo&apos;shildi, qoʻshilish soʻrovlarini, taklif havolalarini yaratuvchi chatda boshqarish uchun. (bu haqda ko'proq ma&apos;lumot <a href="https://telegram.org/blog/shared-media-scrolling-calendar-join-requests-and-more#join-requests-for-groups-and-channels">blog</a>imizda keltirilgan).</li>
+<li><a href="#chatinvitelink">ChatInviteLink</a> sinfiga <code>creates_join_request</code> va <code>pending_join_request_count</code> maydonlari qo'shildi .</li>
+<li><a href="#chatinvitelink">ChatInviteLink</a> sinfiga <code>name</code> maydoni va <a href="https://telegram.org/blog/shared-media-scrolling-calendar-join-requests-and-more#unique-names-for-invite-links">taklif havolalari nomlari</a>ni boshqarish uchun <a href="#createchatinvitelink">createChatInviteLink</a> va <a href="#editchatinvitelink">editChatInviteLink</a> usullariga <code>name</code> parametrlari qo&apos;shildi.</li>
+<li><a href="#chatjoinrequest">ChatJoinRequest</a> sinfi va <a href="#update">Update</a> sinfidagi <em>chat_join_request</em> maydoni bilan ifodalangan chatga qo&apos;shilish uchun yangi so&apos;rovlar haqida yangilanishlar qo‘shildi. Ushbu yangilanishlarni olish uchun bot <em>can_invite_users</em> administratori bilan suhbatda administrator bo&apos;lishi kerak.</li>
+<li>Chatga qo&apos;shilish so&apos;rovlarini boshqarish uchun <a href="#approvechatjoinrequest">approveChatJoinRequest</a> va <a href="#declinechatjoinrequest">declineChatJoinRequest</a> usullari qoʻshildi.</li>
+<li><a href="#sendchataction">sendChatAction</a> usulida <em>choose_sticker</em> amali uchun qo&apos;shimcha qo&apos;llab-quvvatlandi.</li>
 </ul>
-<p><strong><a href="/bots/api-changelog">See earlier changes »</a></strong></p>
+<p><strong><a href="https://core.telegram.org/bots/api-changelog">Avvalgi o&apos;zgarishlarni ko&apos;ring »</a></strong></p>
 <h3><a class="anchor" name="authorizing-your-bot" href="#authorizing-your-bot"><i class="anchor-icon"></i></a>Botingizga avtorizatsiya qilish</h3>
 <p>Each bot is given a unique authentication token <a href="/bots#6-botfather">when it is created</a>. The token looks something like <code>123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11</code>, but we&#39;ll use simply <strong>&lt;token&gt;</strong> in this document instead. You can learn about obtaining tokens and generating new ones in <a href="https://core.telegram.org/bots#6-botfather">this document</a>.</p>
 <h3><a class="anchor" name="making-requests" href="#making-requests"><i class="anchor-icon"></i></a>So&apos;rovlar yasash</h3>
@@ -566,7 +566,7 @@ To learn how to create…">
 </tbody>
 </table>
 <h4><a class="anchor" name="message" href="#message"><i class="anchor-icon"></i></a>Message</h4>
-<p>This object represents a message.</p>
+<p>Bu obyekt xabarni ifodalaydi.</p>
 <table class="table">
 <thead>
 <tr>
@@ -579,12 +579,12 @@ To learn how to create…">
 <tr>
 <td>message_id</td>
 <td>Integer</td>
-<td>Unique message identifier inside this chat</td>
+<td>Ushbu chat ichidagi noyob xabar identifikatori</td>
 </tr>
 <tr>
 <td>from</td>
 <td><a href="#user">User</a></td>
-<td><em>Ixtiyoriy</em>. Sender of the message; empty for messages sent to channels. For backward compatibility, the field contains a fake sender user in non-channel chats, if the message was sent on behalf of a chat.</td>
+<td><em>Ixtiyoriy</em>. Xabar jo&apos;natuvchisi; kanallarga yuborilgan xabarlar uchun bo&apos;sh. For backward compatibility, the field contains a fake sender user in non-channel chats, if the message was sent on behalf of a chat.</td>
 </tr>
 <tr>
 <td>sender_chat</td>
